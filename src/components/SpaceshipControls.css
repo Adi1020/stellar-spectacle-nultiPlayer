@@ -1,0 +1,83 @@
+/* SpaceshipControls.css */
+.spaceship-controls-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .spaceship-toggle-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .spaceship-toggle-btn:hover {
+    background-color: #357abd;
+  }
+  
+  .spaceship-controls-info {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 300px;
+  }
+  
+  .spaceship-controls-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .spaceship-controls-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  .spaceship-controls-info li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .spaceship-controls-info strong {
+    color: #4a90e2;
+  }
+  
+  .spaceship-stats {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .spaceship-stats p {
+    margin: 5px 0;
+  }
+
+  /* SpaceshipControls.css */
+/* ... (previous styles remain the same) */
+
+.spaceship-stats {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  
+  .spaceship-stats label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .spaceship-stats input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+  }

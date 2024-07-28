@@ -1,0 +1,220 @@
+/* src/styles/App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+  color: #E0E1FF; /* Light blue-white for text */
+  min-height: 100vh;
+  position: relative;
+}
+
+nav {
+  background-color: rgba(8, 24, 58, 0.7); /* Dark blue with transparency */
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.server_status {
+  color: #205083; /* Dark blue for server status */
+  position: absolute;
+  bottom: 5%;
+  background-color: rgba(255, 255, 205, 0.5);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.server_status p {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.connected-users {
+  color: #205083; /* Dark blue for connected users */
+  position: absolute;
+  bottom: 2.5%;
+  background-color: rgba(255, 255, 205, 0.5);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.connected-users p {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #4CC9F0; /* Bright blue for links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #F72585; /* Bright pink on hover */
+  text-decoration: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  background-color: rgba(8, 24, 58, 0.8); /* Dark blue with high transparency */
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #4CC9F0; /* Bright blue for headings */
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.feature-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  background-color: #3A0CA3; /* Deep purple for buttons */
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 2px solid #4CC9F0; /* Bright blue border */
+}
+
+.button:hover {
+  background-color: #4361EE; /* Lighter purple on hover */
+  transform: translateY(-2px);
+}
+
+.intro-visual {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #205083; /* Keeping the original background color */
+  top: 0;
+  z-index: -10;
+}
+
+/* Ensure the canvas takes up full space */
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.crosshair {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.crosshair-line {
+  width: 2px;
+  height: 20px;
+  background-color: #E0E1FF;
+  position: absolute;
+}
+
+.crosshair-line:nth-child(2) {
+  width: 20px;
+  height: 2px;
+}
+
+.pvpMode {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #3A0CA3;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 2px solid #4CC9F0;
+  cursor: pointer;
+}
+
+.pvpMode:hover {
+  background-color: #4361EE;
+  transform: translateY(-2px);
+}
+
+.health-bar {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 20px;
+  background-color: #3A0CA3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.health-bar-inner {
+  height: 100%;
+  background-color: #4CC9F0;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.hit-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  pointer-events: none;
+}
